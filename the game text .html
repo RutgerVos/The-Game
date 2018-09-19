@@ -11,7 +11,7 @@
 <script>
 function startGame() { 
 
-if(prompt('heb je zin in de game') === 'ja'){
+if(prompt('heb je zin in de game') === 'ja' || ('heb je zin in de game') === 'nee'){
 	alert('mooi')
 	if(prompt('weet je dit zeker')==='ja') {
 		alert('mooi jij wint')
@@ -20,7 +20,7 @@ if(prompt('heb je zin in de game') === 'ja'){
     if(prompt('weet je dit zeker') === 'nee'){
 		alert('je verliest')
 	}
-   if(prompt('wil je niet winnen') === 'nee'){
+  else if(prompt('wil je niet winnen') === 'nee'){
    alert('oke maar je win omdat ik dat wil')
    }
 
