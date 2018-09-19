@@ -1,0 +1,48 @@
+*{	margin:0;
+	padding:0;}
+
+body  {
+	
+    margin: 0;
+    /* The image used */
+    background-image: url("../img/background1.png");
+
+    /* Full height */
+    height: 10%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1   {color: red;}
+h2   {color: red;}
+h3   {color: red;}
+p    {color: gray;}
+span {color:red}
+	.A{ 
+	 width:50px;
+	 height:50px;
+	 border:0;"
+	 }
+	 .B{
+	width:50px;
+	height:50px;
+	border:0;" 	 
+	 }
+	 .C{
+	float: middle;
+	width: 130px;
+	height: 130px; 
+	 }
+.icon {
+	float: right;
+	width: 130px;
+	height: 130px;
+}
+
+html{
+	  height: 100%;
+    margin: 0;
+}

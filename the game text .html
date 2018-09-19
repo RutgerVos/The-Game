@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>game.nl</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	</head>
+<body>
+<p>hier begint het</p>
+<p id="demo"></p>
+<script>
+function startGame() { 
+
+if(prompt('heb je zin in de game') === 'ja'){
+	alert('mooi')
+	if(prompt('weet je dit zeker')==='ja') {
+		alert('mooi jij wint')
+	}
+}else
+    if(prompt('das jammer') === 'nee'){
+		alert('je verliest')
+	}
+   if(prompt('heeft de kaas korst') === 'ja'){
+   alert('bleu de rochbaron')
+   }
+
+}
+</script>
+<button onclick="startGame()">Start Game</button>
+
+
+</body>
+</html>
