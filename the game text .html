@@ -6,7 +6,7 @@
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 	</head>
 <body>
-<p>hier begint het</p>
+<p>hier begint het (beantwoordt de vragen met ja Of Nee</p>
 <p id="demo"></p>
 <script>
 var Zin
@@ -15,23 +15,31 @@ var echtzeker
 var bedoel
 var mooi
 var achternaam
+var random
+var random2
+var iets
+var iets2
 
 function startGame() {
-var Zin = prompt('heb je zin de game');
-var Zekerheid = prompt('weet je dit zeker');
-var echtzeker = prompt('weet je het echt zeker');
-var bedoel = prompt('is dit echt wat je bedoelt');
-var mooi = prompt('mooi weet je deze code heeft gemaakt?');
-var achternaam = prompt('nog een vraag wat is de achternaam van de persoon die deze');
-if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' && bedoel=== 'ja' && mooi=== 'rutger' && achternaam=== 'vos'){
+var Zin = prompt('heb je zin in de game');
+var Zekerheid = prompt('weet je dit zeker?');
+var echtzeker = prompt('weet je het echt zeker?');
+var bedoel = prompt('is dit echt wat je bedoelt?');
+var mooi = prompt('mooi vind je deze code leuk?');
+var achternaam = prompt('vindt je eigen achternaam leuke?');
+if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' && bedoel=== 'ja' && mooi ==='ja' && achternaam === 'ja'){
 alert('toegang tot de win')
 
 }
-else if(Zin=== 'nee' && Zekerheid=== 'nee' && echtzeker === 'nee' && bedoel=== 'nee'){
-			alert('je verliest')
+else if(Zin=== 'nee' && Zekerheid=== 'nee' && echtzeker === 'nee' && bedoel=== 'nee' && mooi === 'nee' && achternaam === 'nee'){
+var random2 = prompt ('hallo');
+var iets2 = prompt ('iets2'); 
+alert('je verliest')
 		}
- else if(prompt('wil je niet winnen') === 'nee'){
-   alert('oke maar je verliest omdat ik dat wil')
+ else if(Zin=== 'ja' && Zekerheid=== 'nee' && echtzeker === 'ja' && bedoel=== 'ja' && mooi === 'nee' && achternaam === 'ja'){
+var random = prompt('random text');
+var iets = prompt('iets');
+alert('oke maar je verliest omdat ik dat wil')
    }
 
 }
