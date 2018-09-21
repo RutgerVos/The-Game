@@ -9,25 +9,34 @@
 <p>hier begint het</p>
 <p id="demo"></p>
 <script>
-function startGame() { 
+var Zin
+var Zekerheid
+var echtzeker
+var bedoel
+var mooi
+var achternaam
 
-if(prompt('heb je zin in de game') === 'ja' || ('heb je zin in de game') === 'nee'){
-	alert('mooi')
-	if(prompt('weet je dit zeker')==='ja' || ('weet je dit zeker') ==='nee'){
-		alert('mooi jij wint')
-	}
-}else
-    if(prompt('weet je dit zeker') === 'nee'){
-		alert('je verliest')
-	}
-  else if(prompt('wil je niet winnen') === 'nee'){
-   alert('oke maar je win omdat ik dat wil')
+function startGame() {
+var Zin = prompt('heb je zin de game');
+var Zekerheid = prompt('weet je dit zeker');
+var echtzeker = prompt('weet je het echt zeker');
+var bedoel = prompt('is dit echt wat je bedoelt');
+var mooi = prompt('mooi weet je deze code heeft gemaakt?');
+var achternaam = prompt('nog een vraag wat is de achternaam van de persoon die deze');
+if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' && bedoel=== 'ja' && mooi=== 'rutger' && achternaam=== 'vos'){
+alert('toegang tot de win')
+
+}
+else if(Zin=== 'nee' && Zekerheid=== 'nee' && echtzeker === 'nee' && bedoel=== 'nee'){
+			alert('je verliest')
+		}
+ else if(prompt('wil je niet winnen') === 'nee'){
+   alert('oke maar je verliest omdat ik dat wil')
    }
 
 }
 </script>
 <button onclick="startGame()">Start Game</button>
-
 
 </body>
 </html>
