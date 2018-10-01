@@ -6,7 +6,7 @@
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 	</head>
 <body>
-<p>hier begint het (beantwoordt de vragen met ja Of Nee</p>
+<p>hier begint het (beantwoordt de vragen met ja Of Nee)</p>
 <p id="demo"></p>
 <script>
 var Zin
@@ -21,27 +21,32 @@ var iets
 var iets2
 
 function startGame() {
-var Zin = prompt('heb je zin in de game');
-var Zekerheid = prompt('weet je dit zeker?');
-var echtzeker = prompt('weet je het echt zeker?');
-var bedoel = prompt('is dit echt wat je bedoelt?');
-var mooi = prompt('mooi vind je deze code leuk?');
-var achternaam = prompt('vindt je eigen achternaam leuke?');
-if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' && bedoel=== 'ja' && mooi ==='ja' && achternaam === 'ja'){
-alert('toegang tot de win')
 
-}
-else if(Zin=== 'nee' && Zekerheid=== 'nee' && echtzeker === 'nee' && bedoel=== 'nee' && mooi === 'nee' && achternaam === 'nee'){
-var random2 = prompt ('hallo');
-var iets2 = prompt ('iets2'); 
-alert('je verliest')
+	var Zin = prompt('heb je zin in de game');
+	var Zekerheid = prompt('weet je dit zeker?');
+	var echtzeker = prompt('weet je het echt zeker?');
+	
+		if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' || Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'nee'){
+			alert('toegang tot de win')
+			console.log('dit is lv 1 win');
+		if(random2=== 'ja' && iets2=== 'ja'){
+		alert('oegang tot win level 2')
+		console.log('dit is een level 2 win');
+		}	
+
+		} else if(Zin=== 'ja' && Zekerheid=== 'nee' && echtzeker === 'nee'){
+		
+			var random2 = prompt ('ben je heel on zeker');
+			var iets2 = prompt ('iets2'); 
+			alert('je verliest')
+			console.log('dit level 0')
+			
+		} else if(Zin=== 'ja' && zekerheid=== 'nee'&& echtzeker === 'ja' || Zin=== 'nee' || zekerheid=== 'nee'&& echtzeker === 'ja'){
+			var random = prompt('random text');
+			var iets = prompt('iets');
+			alert('oke maar je verliest omdat ik dat wil')
+			console.log('dit level -1');
 		}
- else if(Zin=== 'ja' && Zekerheid=== 'nee' && echtzeker === 'ja' && bedoel=== 'ja' && mooi === 'nee' && achternaam === 'ja'){
-var random = prompt('random text');
-var iets = prompt('iets');
-alert('oke maar je verliest omdat ik dat wil')
-   }
-
 }
 </script>
 <button onclick="startGame()">Start Game</button>
