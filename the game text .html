@@ -29,7 +29,7 @@ function startGame() {
 		if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' || Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'nee'){
 			alert('toegang tot de win')
 			console.log('dit is lv 1 win');
-		if(zin=== 'nee' && zekerheid=== 'nee' && echtzeker=== 'nee' ){
+		if(random=== 'ja' && iets=== 'ja' || random=== 'nee' && iets=== 'nee'){
 		alert('toegang tot win level 2')
 		console.log('dit is een level 2 win');
 		}	
@@ -37,11 +37,11 @@ function startGame() {
 		} else if(Zin=== 'ja' && Zekerheid=== 'nee' && echtzeker === 'nee'){
 		
 			var random2 = prompt ('ben je heel on zeker');
-			var iets2 = prompt ('iets2'); 
+			var iets2 = prompt ('iets2');			
 			alert('je verliest')
 			console.log('dit level 0')
 			
-		} else if(Zin=== 'ja' && zekerheid=== 'nee'&& echtzeker === 'ja' || Zin=== 'nee' || zekerheid=== 'nee'&& echtzeker === 'ja'){
+		} else if(iets2=== 'ja' || random2=== 'nee' ){
 			var random = prompt('random text');
 			var iets = prompt('iets');
 			alert('oke maar je verliest omdat ik dat wil')
