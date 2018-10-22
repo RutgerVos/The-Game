@@ -26,10 +26,10 @@ function startGame() {
 	var Zekerheid = prompt('weet je dit zeker?');
 	var echtzeker = prompt('weet je het echt zeker?');
 	
-		if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja' || Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'nee'){
+		if(Zin=== 'ja' && Zekerheid=== 'ja' && echtzeker === 'ja'){
 			alert('toegang tot de win')
 			console.log('dit is lv 1 win');
-		if(random=== 'ja' && iets=== 'ja' || random=== 'nee' && iets=== 'nee'){
+		if(Zin=== 'nee' && Zekerheid=== 'nee' && echtzeker=== 'ja' || Zin=== 'ja' && Zekerheid==='ja' && echtzeker==='nee'){
 		alert('toegang tot win level 2')
 		console.log('dit is een level 2 win');
 		}	
@@ -37,17 +37,48 @@ function startGame() {
 		} else if(Zin=== 'ja' && Zekerheid=== 'nee' && echtzeker === 'nee'){
 		
 			var random2 = prompt ('ben je heel on zeker');
-			var iets2 = prompt ('iets2');			
+			var iets2 = prompt ('iets2');
+			if (random2 === 'ja' && iets=== 'nee') {			
 			alert('je verliest')
 			console.log('dit level 0')
 			
-		} else if(iets2=== 'ja' || random2=== 'nee' ){
+		 if (iets2=== 'nee'){
 			var random = prompt('random text');
-			var iets = prompt('iets');
+			var iets = prompt('wat is 2+3?');
 			alert('oke maar je verliest omdat ik dat wil')
-			console.log('dit level -1');
+			console.log('ditis een level -1');
+			if (iets==5) {
+				alert('mooi je kan rekenen win')
+				console.log('dit is een level rekenen 1');
+				var meer = ('wil je meer rekenen');
+				if (meer = 'ja') {
+					var denk = ('wat is 8*5');
+					if (denk >= 40) {
+						alert('je was in duurt van het goede antwoord 40 was het goede antwoord')
+						console.log('dit is een level rekenen 0');
+						var wil = ('wil je meer rekenen');
+					if(denk <= 40){
+						alert('je hebt het juiste antwoord')
+						console.log('dit is een level rekenen 2 rekenen win');
+						if (wil=== 'ja') {
+							alert('mooi maar ik heb niet meer vragen');
+							console.log('dit is een level rekenen 3');
+							!(iets==denk);
+						}
+
+					}
+			}
 		}
 }
+}
+}
+}
+}
+
+
+
+
+
 </script>
 <button onclick="startGame()">Start Game</button>
 
