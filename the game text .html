@@ -9,17 +9,6 @@
 <p>hier begint het (beantwoordt de vragen met ja Of Nee)</p>
 <p id="demo"></p>
 <script>
-var Zin
-var Zekerheid
-var echtzeker
-var bedoel
-var mooi
-var achternaam
-var random
-var random2
-var iets
-var iets2
-
 function startGame() {
 
 	var Zin = prompt('heb je zin in de game');
@@ -32,6 +21,11 @@ function startGame() {
 		if(Zin=== 'nee' && Zekerheid=== 'nee' && echtzeker=== 'ja' || Zin=== 'ja' && Zekerheid==='ja' && echtzeker==='nee'){
 		alert('toegang tot win level 2')
 		console.log('dit is een level 2 win');
+		}
+		else if(Zin=== 'ja' && Zekerheid==='nee' && echtzeker==='ja')
+		{
+        alert('toegang tot win level 4')
+		console.log('dit is een level 4 win');
 		}	
 
 		} else if(Zin=== 'ja' && Zekerheid=== 'nee' && echtzeker === 'nee'){
@@ -42,21 +36,22 @@ function startGame() {
 			alert('je verliest')
 			console.log('dit level 0')
 			
-		 if (iets2=== 'nee'){
+		 if (iets2 != 'ja'){
 			var random = prompt('random text');
 			var iets = prompt('wat is 2+3?');
 			alert('oke maar je verliest omdat ik dat wil')
 			console.log('ditis een level -1');
-			if (iets==5) {
+			if (iets===5) {
 				alert('mooi je kan rekenen win')
 				console.log('dit is een level rekenen 1');
 				var meer = ('wil je meer rekenen');
 				if (meer = 'ja') {
 					var denk = ('wat is 8*5');
 					if (denk >= 40) {
-						alert('je was in duurt van het goede antwoord 40 was het goede antwoord')
+						alert('je was in buurt van het goede antwoord 40 was het goede antwoord')
 						console.log('dit is een level rekenen 0');
 						var wil = ('wil je meer rekenen');
+
 					if(denk <= 40){
 						alert('je hebt het juiste antwoord')
 						console.log('dit is een level rekenen 2 rekenen win');
